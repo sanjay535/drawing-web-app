@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./client.js" type="module"></script>
+    <script async defer src="./script.js" type="module"></script>
+    <title>Drawing app</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="control-panel">
+      <!-- <div class="up-arrow">
+        <img src="./img/up-arrow.svg" width="30px" height="30px" alt="up" />
+      </div> -->
+      <div class="width-color">
+        <div class="stroke-width">
+          <div id="mm-1" class="pointer">
+            <div class="mm-1">
+              <div class="mm"></div>
+            </div>
+            <div style="margin-left: 10px; margin-top: 5px">1 mm</div>
+          </div>
+
+          <div id="mm-2" class="pointer">
+            <div class="mm-2">
+              <div class="mm"></div>
+            </div>
+            <div style="margin-left: 10px; margin-top: 5px">3 mm</div>
+          </div>
+
+          <div id="mm-3" class="pointer">
+            <div class="mm-3">
+              <div class="mm"></div>
+            </div>
+            <div style="margin-left: 10px; margin-top: 5px">5 mm</div>
+          </div>
+
+          <div id="mm-4" class="pointer">
+            <div class="mm-4">
+              <div class="mm"></div>
+            </div>
+            <div style="margin-left: 10px; margin-top: 5px">7 mm</div>
+          </div>
+
+          <div id="mm-5" class="pointer">
+            <div class="mm-5">
+              <div class="mm"></div>
+            </div>
+            <div style="margin-left: 10px; margin-top: 5px">10 mm</div>
+          </div>
+        </div>
+
+        <div class="stroke-color">
+          <div id="green" class="box green"></div>
+          <div id="red" class="box red"></div>
+          <div id="yellow" class="box yellow"></div>
+          <div id="black" class="box black"></div>
+          <div id="blue" class="box blue"></div>
+        </div>
+      </div>
+
+      <div class="moon">
+        <img
+          id="moon"
+          width="30px"
+          height="30px"
+          src="./img/free_icon_1.svg"
+          alt="moon"
+        />
+      </div>
+    </div>
+    <section class="container">
+      <canvas id="drawing-board"></canvas>
+    </section>
+  </body>
+</html>
