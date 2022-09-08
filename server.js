@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http'); //provide by node
 const socketio = require('socket.io');
-
+const PORT = process.env.PORT | 4444;
 const app = express();
 
 const server = http.createServer(app);
@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(4444, () => {
-  console.log('server started on http://localhost:4444');
+server.listen(PORT, () => {
+  console.log(`server started on http://localhost:${PORT}`);
 });
