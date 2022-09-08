@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .control-panel {
   width: 100%;
   position: fixed;
@@ -51,17 +52,20 @@
   height: 1px;
   background-color: #fff;
 }
-.mm-2 div {
-  height: 2px;
-}
-.mm-3 div {
+.mm-1 div {
   height: 3px;
 }
-.mm-4 div {
+.mm-2 div {
   height: 4px;
 }
-.mm-5 div {
+.mm-3 div {
   height: 5px;
+}
+.mm-4 div {
+  height: 6px;
+}
+.mm-5 div {
+  height: 7px;
 }
 
 .stroke-width {
@@ -106,6 +110,28 @@
 .blue {
   margin-right: 5px;
   background-color: blue;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  font-size: 16pt;
+}
+.dropdown-toggle {
+  color: #fff;
+}
+.dropdown-toggle:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.dropdown-item {
+  color: #343a40;
+}
+.dropdown-item:hover {
+  text-decoration: none;
+}
+#drawing-board {
+  margin-top: 90px;
 }
 
 @media (max-width: 600px) {
